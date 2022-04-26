@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pos UI/UX design</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylee.css">
+        <!--icon stylesheet-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Acar<sub>Z</sub></a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <aside>
+            <div class="aside-style">
+                <img class="img-style"src="pics/yogesh.jpg">
+                <h2>Yogesh kanna</h2>
+                <h3>designer</h3>
+            </div>
+        </aside>
+        <section>
+            <div class="item-row">
+                <div class="box-shadow item-column-for-aside">
+                    <i class='fas fa-bell modules'></i>
+                    <i class="fas fa-cart-plus modules"></i>
+                    <i class='fas fa-user-cog modules'></i>
+                    <i class='fas fa-universal-access modules'></i>
+                    <i class='fas fa-palette modules'></i>
+                    <i class='fas fa-splotch modules'></i>
+                  </div>
+                <div class="box-shadow item-column">
+                    <img class="img-for-item-row" src="pics/items/bitcoin.png">
+                  <h2 class="align-center">Bitcoin 3d</h2><br>
+                  <h4 class="align-center">type of money that is completely virtual</h4> 
+                </div>
+                <div class="box-shadow item-column">
+                    <img class="img-for-item-row" src="pics/items/linkedin-logo.png">
+                  <h2 class="align-center">Calculator 3d</h2><br>
+                  <h4 class="align-center">type of money that is completely virtual</h4> 
+                </div>
+                <div class="box-shadow item-column">
+                    <img class="img-for-item-row" src="pics/items/facebook-logo.png">
+                  <h2 class="align-center">Camera 3d</h2><br>
+                  <h4 class="align-center">type of money that is completely virtual</h4> 
+                </div>
+                <div class="box-shadow item-column margin-top">
+                    <img class="img-for-item-row" src="pics/items/pinterest-logo.png">
+                  <h2 class="align-center">Bitcoin 3d</h2><br>
+                  <h4 class="align-center">type of money that is completely virtual</h4> 
+                </div>
+                <div class="box-shadow item-column margin-top">
+                    <img class="img-for-item-row" src="pics/items/twitter.png">
+                  <h2 class="align-center">Calculator 3d</h2><br>
+                  <h4 class="align-center">type of money that is completely virtual</h4> 
+                </div>
+                <div class="box-shadow item-column margin-top">
+                    <img class="img-for-item-row" src="pics/items/instagram-logo.png">
+                  <h2 class="align-center">Camera 3d</h2><br>
+                  <h4 class="align-center">type of money that is completely virtual</h4> 
+                </div>
+              </div>
+        </section>
+
+        <!--
+       <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>-->
+
+        <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const navLink = document.querySelectorAll(".nav-link");
+    
+    hamburger.addEventListener("click", mobileMenu);
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+    
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+
+    /*function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }*/
+        </script>
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    </body>
+</html>
